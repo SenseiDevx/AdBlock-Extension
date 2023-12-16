@@ -53,39 +53,39 @@ function loadAndApplyTheme() {
 function applyTheme(themeName) {
     switch (themeName) {
         case 'blue':
-            document.body.style.background = 'white';
-            document.querySelector('.btn-back').style.background = 'white';
+            document.body.style.background = 'rgb(220 233 247)';
+            document.querySelector('.btn-back').style.background = '#ffffff';
             document.querySelector('.header-allow').style.background = 'rgb(220 233 247)';
             document.querySelector('.footer').style.background = 'rgb(220 233 247)';
             document.querySelector('#btn-on').style.background = '#0f5da9';
             document.querySelector('.text-content').style.color = '#0f5da9';
             document.querySelector('.domain').style.color = '#0f5da9';
-            document.querySelector('.themes').querySelector('h2').style.color = 'black';
+            document.querySelector('.themes').querySelector('h2').style.color = '#ffffff';
             document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
             cookies.style.color = '#0f5da9';
             backBtn.src = '../assets/icons/backBtn.png';
             break;
         case 'violet':
-            document.body.style.background = '#431E80';
-            document.querySelector('.btn-back').style.background = '#431E80';
-            document.querySelector('.header-allow').style.background = 'white';
-            document.querySelector('.footer').style.background = 'white';
-            document.querySelector('#btn-on').style.background = 'blueviolet';
-            document.querySelector('.text-content').style.color = '#431E80';
-            document.querySelector('.domain').style.color = '#431E80';
-            document.querySelector('.themes').querySelector('h2').style.color = 'white';
-            document.querySelector('.cookies_count').querySelector('p').style.color = '#431E80';
-            cookies.style.color = '#431E80';
+            document.body.style.background = '#9f1a1a';
+            document.querySelector('.btn-back').style.background = '#ffffff';
+            document.querySelector('.header-allow').style.background = '#9f1a1a';
+            document.querySelector('.footer').style.background = '#9f1a1a';
+            document.querySelector('#btn-on').style.background = '#ff0000';
+            document.querySelector('.text-content').style.color = '#ffffff';
+            document.querySelector('.domain').style.color = '#ffffff';
+            document.querySelector('.themes').querySelector('h2').style.color = '#ffffff';
+            document.querySelector('.cookies_count').querySelector('p').style.color = '#ffffff';
+            cookies.style.color = '#ffffff';
             backBtn.src = '../assets/icons/backBtn-white.png';
             break;
         case 'dark':
-            document.body.style.background = '#444345';
-            document.querySelector('.btn-back').style.background = '#444345';
-            document.querySelector('.header-allow').style.background = 'white';
-            document.querySelector('.footer').style.background = 'brown';
-            document.querySelector('#btn-on').style.background = 'brown';
-            document.querySelector('.text-content').style.color = 'white';
-            document.querySelector('.domain').style.color = '#444345';
+            document.body.style.background = '#13133f';
+            document.querySelector('.btn-back').style.background = '#ffffff';
+            document.querySelector('.header-allow').style.background = '#13133f';
+            document.querySelector('.footer').style.background = '#13133f';
+            document.querySelector('#btn-on').style.background = '#1a296c';
+            document.querySelector('.text-content').style.color = '#ffffff';
+            document.querySelector('.domain').style.color = '#ffffff';
             document.querySelector('.themes').querySelector('h2').style.color = 'white';
             document.querySelector('.cookies_count').querySelector('p').style.color = 'white';
             cookies.style.color = 'white';
@@ -242,3 +242,12 @@ function listenForDisplayChanges() {
 }
 
 init();
+
+// open about page
+const openOptionsButton = document.querySelector('#openPage');
+
+openOptionsButton.addEventListener('click', openProducts);
+
+function openProducts() {
+    chrome.tabs.create({url: chrome.runtime.getURL('../page/about.html')});
+}

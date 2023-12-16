@@ -10,7 +10,8 @@
   --var9: #cecfd1;
   --var10: #c5c5c5;
   --var11: #19468b;
-  --main-color: var(--var1);
+  --var12: #34d9ad;
+  --main-color: var(--var12);
   --main-hover: var(--var2);
   --main-animation: var(--var1);
   --link-color: var(--var3);
@@ -23,10 +24,12 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
 body {
-  font-family: "Anek Kannada", sans-serif;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   background-color: var(--var5);
@@ -63,6 +66,7 @@ body {
 }
 .disabled .text-content {
   color: var(--var6);
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 .disabled .btn-back {
   background-color: var(--var6);
@@ -105,7 +109,7 @@ body {
 
 .header-allow {
   width: 100%;
-  background-color: rgb(220, 233, 247);
+  background-color: var(--var12);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,9 +124,9 @@ body {
 .header-text-tittle {
   font-size: 20px;
   text-align: left;
-  color: var(--var1);
   float: left;
   font-weight: 600;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 .header-text-tittle {
   color: var(--var6);
@@ -238,8 +242,8 @@ body {
 
 .text-content {
   font-size: larger;
-  color: var(--main-color);
   text-align: center;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
 #btn-on {
@@ -262,7 +266,7 @@ body {
   color: rgb(37, 37, 37);
   border-radius: 50%;
   text-align: center;
-  background-color: var(--main-color);
+  background-color: var(--var12);
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 999;
@@ -276,7 +280,6 @@ body {
   cursor: pointer;
 }
 #btn-on:hover {
-  background-color: var(--main-hover);
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -306,7 +309,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(220, 233, 247);
+  background-color: var(--var12);
   padding: 10px;
   height: 85px;
   display: -webkit-box;
@@ -331,13 +334,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: var(--main-color);
 }
 .cookies_count p {
   font-size: larger;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 .cookies_count span {
   font-size: large;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
 .domain {
@@ -345,6 +349,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
 .themes {
@@ -356,6 +361,7 @@ body {
   font-size: 24px;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
 .back_btn {
@@ -399,4 +405,5 @@ body {
 
 .extension {
   font-size: 14px;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
 }
