@@ -12,6 +12,19 @@ const infoIcon = document.querySelector('#infoIcon');
 const settingsBtn = document.querySelector('#settings');
 const backBtn = document.querySelector('#backBtn');
 const cookies = document.querySelector('#cookies');
+const switcher = document.getElementById('power');
+const checkbox = switcher.querySelector('input');
+
+const savedState = localStorage.getItem('switcherState');
+if (savedState) {
+    checkbox.checked = JSON.parse(savedState);
+}
+
+checkbox.addEventListener('change', function () {
+    // Сохраняем текущее состояние в localStorage
+    localStorage.setItem('switcherState', checkbox.checked);
+});
+
 
 function init() {
     ['blue', 'dark', 'violet'].forEach((theme) => {
@@ -242,3 +255,6 @@ function listenForDisplayChanges() {
 }
 
 init();
+
+
+
