@@ -53,24 +53,23 @@ function loadAndApplyTheme() {
 function applyTheme(themeName) {
     switch (themeName) {
         case 'blue':
-            document.body.style.background = 'rgb(220 233 247)';
-            document.querySelector('.btn-back').style.background = '#ffffff';
-            document.querySelector('.header-allow').style.background = 'rgb(220 233 247)';
-            document.querySelector('.footer').style.background = 'rgb(220 233 247)';
-            document.querySelector('#btn-on').style.background = '#0f5da9';
-            document.querySelector('.text-content').style.color = '#0f5da9';
-            document.querySelector('.domain').style.color = '#0f5da9';
-            document.querySelector('.themes').querySelector('h2').style.color = '#000000';
-            document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
-            cookies.style.color = '#0f5da9';
+            document.body.style.background = '#b0c3d2';
+            document.querySelector('.header-allow').style.background = '#b0c3d2';
+            document.querySelector('.name-of-extension').style.background = '#4b8bbe';
+            document.querySelector('.footer').style.background = '#b0c3d2';
+            document.querySelector('.text-content').style.color = '#4a5257';
+            document.querySelector('.domain').style.color = '#4a5257';
+            document.querySelector('.themes').querySelector('h2').style.color = '#4a5257';
+            document.querySelector('.cookies_count').querySelector('p').style.color = '#4a5257';
+            cookies.style.color = '#4a5257';
             backBtn.src = '../assets/icons/backBtn.png';
             break;
-        case 'violet':
-            document.body.style.background = '#9f1a1a';
-            document.querySelector('.btn-back').style.background = '#ffffff';
-            document.querySelector('.header-allow').style.background = '#9f1a1a';
-            document.querySelector('.footer').style.background = '#9f1a1a';
-            document.querySelector('#btn-on').style.background = '#ff0000';
+        case 'dark':
+            document.body.style.background = '#0c1821';
+            document.querySelector('.header-allow').style.background = '#0c1821';
+            document.querySelector('.main_function').style.background = '#4f458c'
+            document.querySelector('.main_function').style.background = '#0c1821'
+            document.querySelector('.name-of-extension').style.background = '#162d3d'
             document.querySelector('.text-content').style.color = '#ffffff';
             document.querySelector('.domain').style.color = '#ffffff';
             document.querySelector('.themes').querySelector('h2').style.color = '#ffffff';
@@ -78,12 +77,12 @@ function applyTheme(themeName) {
             cookies.style.color = '#ffffff';
             backBtn.src = '../assets/icons/backBtn-white.png';
             break;
-        case 'dark':
-            document.body.style.background = '#13133f';
-            document.querySelector('.btn-back').style.background = '#ffffff';
-            document.querySelector('.header-allow').style.background = '#13133f';
-            document.querySelector('.footer').style.background = '#13133f';
-            document.querySelector('#btn-on').style.background = '#1a296c';
+        case 'violet':
+            document.body.style.background = '#4f458c';
+            document.querySelector('.header-allow').style.background = '#4f458c';
+            document.querySelector('.footer').style.background = '#4f458c';
+            document.querySelector('.main_function').style.background = '#4f458c'
+            document.querySelector('.name-of-extension').style.background = '#29244d'
             document.querySelector('.text-content').style.color = '#ffffff';
             document.querySelector('.domain').style.color = '#ffffff';
             document.querySelector('.themes').querySelector('h2').style.color = 'white';
@@ -252,20 +251,16 @@ function openProducts() {
     chrome.tabs.create({url: chrome.runtime.getURL('../page/about.html')});
 }
 
-//
+//safe toggle
 document.addEventListener('DOMContentLoaded', function() {
-    // Проверяем состояние в localStorage при загрузке страницы
     const bluetoothToggle = document.getElementById('bluetoothToggle');
     const savedState = localStorage.getItem('bluetoothState');
 
     if (savedState !== null) {
-        // Если есть сохраненное состояние, устанавливаем его
         bluetoothToggle.checked = savedState === 'true';
     }
 
-    // Обработчик события изменения состояния переключателя
     bluetoothToggle.addEventListener('change', function() {
-        // Сохраняем состояние в localStorage при изменении
         localStorage.setItem('bluetoothState', bluetoothToggle.checked);
     });
 });

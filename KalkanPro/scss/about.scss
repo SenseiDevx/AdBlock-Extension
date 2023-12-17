@@ -9,8 +9,6 @@ $var7: #ffffff;
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
-  outline: none;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -43,13 +41,11 @@ a, span, p, b, h1, h2, h3, h4, h5 {
 }
 
 body {
-  background: var(--var2);
-  background-color: cadetblue;
-
+  background-color: #136996;
 }
 
 header {
-  background-color: #6666CC;
+  background-color: #16b7a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +65,7 @@ header {
     padding: 12px 22px;
     border-radius: 10px;
     text-align: center;
-    background: var(--var4);
+    background-color: #00FFB2;
     -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
@@ -314,3 +310,44 @@ main .whatCan {
     }
   }
 }
+
+
+.content-tab {
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 800px;
+  margin: auto;
+  margin-top: 15px;
+
+  h3 {
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+  }
+
+  ul {
+    line-height: 38px;
+    li {
+      font-size: 20px;
+      color: #000000;
+    }
+  }
+
+  .button-panel {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .ok-button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
+
+

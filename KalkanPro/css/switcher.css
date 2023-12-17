@@ -1,16 +1,7 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
-}
-
 .toggle {
     cursor: pointer;
     display: inline-block;
+    border-radius: 32px;
 }
 
 .toggle-switch {
@@ -52,10 +43,12 @@ body {
 .toggle-checkbox {
     position: absolute;
     visibility: hidden;
+    border-radius: 32px;
 }
 
 .toggle-label {
     margin-left: 5px;
     position: relative;
     top: 2px;
+    border-radius: 32px;
 }
