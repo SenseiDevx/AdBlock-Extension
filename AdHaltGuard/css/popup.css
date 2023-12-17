@@ -116,6 +116,9 @@ body {
   padding: 19px 14px 0;
   height: 120px;
   top: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .header-text {
@@ -133,8 +136,8 @@ body {
 }
 
 .settings {
-  width: 18px;
-  height: 18px;
+  width: 27px;
+  height: 25px;
 }
 .settings img {
   width: 100%;
@@ -145,8 +148,8 @@ body {
 .info-icon {
   position: relative;
   text-align: center;
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;

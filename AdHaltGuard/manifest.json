@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "ProxyGuard",
-    "description": "Enhance browsing: Ad-blocking, visual customization, and cookie insights for a smoother online experience.",
+    "name": "AdHaltGuard",
+    "description": "Chrome Ad Blocker: Streamline browsing, block ads effortlessly. Enjoy a cleaner web in just one click! \uD83D\uDE80",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",

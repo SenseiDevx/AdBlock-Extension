@@ -124,7 +124,7 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         text.innerHTML = 'Ad blocking disabled.';
-        power.src = '../assets/icons/power-off (1).png';
+        power.innerHTML = 'OFF'
         infoIcon.src = '../assets/icons/letter-i (1).png';
         chrome.action.setIcon({
             path: {
@@ -136,7 +136,7 @@ async function updateButtonState() {
         showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         text.innerHTML = 'Advertising on this site has been successfully blocked.';
-        power.src = '../assets/icons/power-off.png';
+        power.innerHTML = 'ON'
         infoIcon.src = '../assets/icons/letter-i.png';
         chrome.action.setIcon({
             path: {
