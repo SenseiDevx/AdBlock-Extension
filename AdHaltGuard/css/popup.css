@@ -1,8 +1,6 @@
 :root {
   --var1: #0f5da9;
   --var2: #05305c;
-  --var3: #0cb754;
-  --var4: #099344;
   --var5: #ffffff;
   --var6: #222222;
   --var7: #CBA2A2;
@@ -10,12 +8,8 @@
   --var9: #cecfd1;
   --var10: #c5c5c5;
   --var11: #19468b;
-  --var12: #34d9ad;
-  --main-color: var(--var12);
   --main-hover: var(--var2);
   --main-animation: var(--var1);
-  --link-color: var(--var3);
-  --link-active: var(--var4);
   --popup-text-color: var(--var1);
 }
 
@@ -59,7 +53,7 @@ body {
   color: var(--var7);
 }
 .disabled .text-content {
-  color: var(--var6);
+  color: #0f5da9;
   font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 .disabled .footer {
@@ -94,7 +88,7 @@ body {
 
 .header-allow {
   width: 100%;
-  background-color: var(--var12);
+  background-color: rgb(220, 233, 247);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +223,7 @@ body {
 .text-content {
   font-size: larger;
   text-align: center;
+  color: #0f5da9;
   font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
@@ -259,6 +254,7 @@ body {
   width: 150px;
   height: 113px;
   border-radius: 10px;
+  background-color: #0f5da9;
 }
 #btn-on:hover {
   -webkit-transition: background-color 0.4s;
@@ -282,7 +278,7 @@ body {
 }
 
 .footer {
-  background-color: var(--var12);
+  background-color: rgb(220, 233, 247);
   padding: 10px;
   height: 85px;
   display: -webkit-box;
@@ -304,17 +300,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
 }
 .cookies_count p {
   font-size: larger;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #0f5da9;
 }
 .cookies_count span {
   font-size: large;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #0f5da9;
 }
 
 .domain {
@@ -323,6 +322,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #0f5da9;
 }
 
 .themes {
@@ -335,6 +335,7 @@ body {
   margin-top: 15px;
   margin-bottom: 30px;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #0f5da9;
 }
 
 .back_btn {

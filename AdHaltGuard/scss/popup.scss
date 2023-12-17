@@ -1,8 +1,6 @@
 :root {
   --var1: #0f5da9;
   --var2: #05305c;
-  --var3: #0cb754;
-  --var4: #099344;
   --var5: #ffffff;
   --var6: #222222;
   --var7: #CBA2A2;
@@ -10,13 +8,9 @@
   --var9: #cecfd1;
   --var10: #c5c5c5;
   --var11: #19468b;
-  --var12: #34d9ad;
 
-  --main-color: var(--var12);
   --main-hover: var(--var2);
   --main-animation: var(--var1);
-  --link-color: var(--var3);
-  --link-active: var(--var4);
   --popup-text-color: var(--var1);
 }
 
@@ -32,7 +26,6 @@ body {
   font-family: Niramit, Arial, Helvetica, sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  //background-color: var(--var5);
   height: 100%;
   direction: ltr;
 }
@@ -65,7 +58,7 @@ body {
   }
 
   .text-content {
-    color: var(--var6);
+    color: #0f5da9;
     font-family: Niramit, Arial, Helvetica, sans-serif;
   }
 
@@ -96,7 +89,7 @@ body {
 
 .header-allow {
   width: 100%;
-  background-color: var(--var12);
+  background-color: rgb(220 233 247);
   display: flex;
   padding: 19px 14px 0;
   height: 120px;
@@ -110,7 +103,6 @@ body {
   &-tittle {
     font-size: 20px;
     text-align: left;
-    //color: var(--var1);
     float: left;
     font-weight: 600;
     font-family: Niramit, Arial, Helvetica, sans-serif;
@@ -221,6 +213,7 @@ body {
 .text-content {
   font-size: larger;
   text-align: center;
+  color: #0f5da9;
   font-family: Niramit, Arial, Helvetica, sans-serif;
 }
 
@@ -242,6 +235,7 @@ body {
   width: 150px;
   height: 113px;
   border-radius: 10px;
+  background-color: #0f5da9;
 
   &:hover {
     transition: background-color 0.4s;
@@ -259,7 +253,7 @@ body {
 }
 
 .footer {
-  background-color: var(--var12);
+  background-color: rgb(220 233 247);
   padding: 10px;
   height: 85px;
   display: flex;
@@ -270,17 +264,19 @@ body {
 .cookies_count {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  //color: var(--main-color);
+  justify-content: center;
+  gap: 8px;
 
   p {
     font-size: larger;
     font-family: Niramit, Arial, Helvetica, sans-serif;
+    color: #0f5da9;
   }
 
   span {
     font-size: large;
     font-family: Niramit, Arial, Helvetica, sans-serif;
+    color: #0f5da9;
   }
 }
 
@@ -290,6 +286,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+  color: #0f5da9;
 }
 
 .themes {
@@ -302,6 +299,7 @@ body {
     margin-top: 15px;
     margin-bottom: 30px;
     font-family: Niramit, Arial, Helvetica, sans-serif;
+    color: #0f5da9;
   }
 }
 

@@ -60,7 +60,7 @@ function applyTheme(themeName) {
             document.querySelector('#btn-on').style.background = '#0f5da9';
             document.querySelector('.text-content').style.color = '#0f5da9';
             document.querySelector('.domain').style.color = '#0f5da9';
-            document.querySelector('.themes').querySelector('h2').style.color = '#ffffff';
+            document.querySelector('.themes').querySelector('h2').style.color = '#000000';
             document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
             cookies.style.color = '#0f5da9';
             backBtn.src = '../assets/icons/backBtn.png';
