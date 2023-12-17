@@ -251,10 +251,6 @@ body {
   -webkit-transform: perspective(500px) translateZ(0px);
           transform: perspective(500px) translateZ(0px);
   cursor: pointer;
-  width: 150px;
-  height: 113px;
-  border-radius: 10px;
-  background-color: #0f5da9;
 }
 #btn-on:hover {
   -webkit-transition: background-color 0.4s;

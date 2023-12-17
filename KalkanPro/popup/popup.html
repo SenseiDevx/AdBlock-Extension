@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../css/popup.css"/>
+    <link rel="stylesheet" href="../css/switcher.css">
     <title>Popup</title>
 </head>
 <body>
@@ -31,14 +32,16 @@
                 </div>
             </header>
             <div class="two_blocks">
-                <section class="image-wrapper">
-                    <img src="../assets/images/logo_64.png" alt="logo">
-                </section>
+                <div class="curtain"></div>
                 <section class="btn-wrapper">
                     <div class="btn-back">
                         <div class="div">
-                            <a id="btn-on" >
+                            <a id="btn-on">
                                 <h3 id="power"></h3>
+                                <label class="toggle">
+                                    <input class="toggle-checkbox" type="checkbox" id="bluetoothToggle" checked>
+                                    <div class="toggle-switch"></div>
+                                </label>
                             </a>
                         </div>
                     </div>

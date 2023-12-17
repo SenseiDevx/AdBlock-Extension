@@ -251,3 +251,21 @@ openOptionsButton.addEventListener('click', openProducts);
 function openProducts() {
     chrome.tabs.create({url: chrome.runtime.getURL('../page/about.html')});
 }
+
+//
+document.addEventListener('DOMContentLoaded', function() {
+    // Проверяем состояние в localStorage при загрузке страницы
+    const bluetoothToggle = document.getElementById('bluetoothToggle');
+    const savedState = localStorage.getItem('bluetoothState');
+
+    if (savedState !== null) {
+        // Если есть сохраненное состояние, устанавливаем его
+        bluetoothToggle.checked = savedState === 'true';
+    }
+
+    // Обработчик события изменения состояния переключателя
+    bluetoothToggle.addEventListener('change', function() {
+        // Сохраняем состояние в localStorage при изменении
+        localStorage.setItem('bluetoothState', bluetoothToggle.checked);
+    });
+});

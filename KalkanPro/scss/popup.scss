@@ -232,10 +232,7 @@ body {
   transition: 0.5s;
   transform: perspective(500px) translateZ(0px);
   cursor: pointer;
-  width: 150px;
-  height: 113px;
-  border-radius: 10px;
-  background-color: #0f5da9;
+
 
   &:hover {
     transition: background-color 0.4s;
