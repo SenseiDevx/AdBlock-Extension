@@ -32,14 +32,9 @@ body {
   font-family: Niramit, Arial, Helvetica, sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--var5);
+  //background-color: var(--var5);
   height: 100%;
   direction: ltr;
-}
-
-.wrapper {
-  width: 350px;
-  height: 300px;
 }
 
 .disabled {
@@ -72,18 +67,6 @@ body {
   .text-content {
     color: var(--var6);
     font-family: Niramit, Arial, Helvetica, sans-serif;
-  }
-
-  .btn-back {
-    background-color: var(--var6);
-  }
-
-  #btn-on {
-    background-color: var(--var7);
-
-    &:hover {
-      background-color: #766262;
-    }
   }
 
   .footer {
@@ -229,12 +212,10 @@ body {
 }
 
 .btn-wrapper {
-  margin-top: -75px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
 }
 
 .text-content {
@@ -250,43 +231,31 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
   border: 0;
   color: rgb(37, 37, 37);
-  border-radius: 50%;
   text-align: center;
-  background-color: var(--var12);
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 999;
   outline: 0;
   transition: 0.5s;
   transform: perspective(500px) translateZ(0px);
-  image-rendering: auto;
-  position: relative;
   cursor: pointer;
+  width: 150px;
+  height: 113px;
+  border-radius: 10px;
 
   &:hover {
     transition: background-color 0.4s;
     transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 
-  > img {
-    width: 50px;
-    position: absolute;
-    height: 50px;
-  }
 }
 
 .btn-back {
   display: flex;
-  width: 120px;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  border-radius: 50%;
-  background-color: white;
   z-index: 1;
+  border-radius: 10px;
 }
 
 .footer {
@@ -374,4 +343,16 @@ body {
 .extension {
   font-size: 14px;
   font-family: Niramit, Arial, Helvetica, sans-serif;
+}
+
+
+.two_blocks {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+  .image-wrapper img {
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }

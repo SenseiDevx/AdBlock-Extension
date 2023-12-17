@@ -125,7 +125,7 @@ async function updateButtonState() {
     if (!isEnabled) {
         text.innerHTML = 'Ad blocking disabled.';
         power.innerHTML = 'OFF'
-        infoIcon.src = '../assets/icons/letter-i (1).png';
+        infoIcon.src = '../assets/icons/letter-i.png';
         chrome.action.setIcon({
             path: {
                 16: '../assets/images/logo-off_16.png',
