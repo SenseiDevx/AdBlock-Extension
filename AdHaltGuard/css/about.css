@@ -6,6 +6,7 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: white;
 }
 
 html {
@@ -38,11 +39,11 @@ a, span, p, b, h1, h2, h3, h4, h5 {
 
 body {
   background: var(--var2);
-  background-color: cadetblue;
+  background-color: #086b6e;
 }
 
 header {
-  background-color: #6666CC;
+  background-color: #19abee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +63,7 @@ header .goBtn {
   padding: 12px 22px;
   border-radius: 10px;
   text-align: center;
-  background: var(--var4);
+  background: #00ff49;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
