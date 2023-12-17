@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/popup.css"/>
+    <title>Popup</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="inner">
+        <div class="main_function">
+            <header class="header-allow">
+                <div class="header-text">
+                    <span class="header-text-tittle"><p class="domain"></p></span>
+                </div>
+                <a
+                        class="info-link allow"
+                        id="openPage"
+                        target="_blank"
+                >
+                    <div class="info-icon">
+                        <img src="../assets/icons/letter-i.png" alt="" id="infoIcon"/>
+                        <div class="info-text-block">
+                            <p class="info_descript">Go to website</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="settings">
+                    <img src="../assets/icons/settings.png" alt="settings" id="settings"/>
+                </div>
+            </header>
+            <section class="btn-wrapper">
+                <div class="btn-back">
+                    <div class="div">
+                        <a id="btn-on">
+                            <img src="../assets/icons/power-off.png" alt="on-off" id="power"/>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <p class="text-content"></p>
+                <div class="cookies_count">
+                    <p>Number of cookies on this site</p>
+                    <span id="cookies"></span>
+                </div>
+            </section>
+        </div>
+        <div class="themes">
+            <div class="back_btn">
+                <img src="../assets/icons/backBtn.png" alt="back" id="backBtn"/>
+            </div>
+            <h2>Select a theme</h2>
+            <div class="theme_cards">
+                <div class="theme_card">
+                    <img src="../assets/images/theme_blue.png" alt="theme" id="blue"/>
+                </div>
+                <div class="theme_card">
+                    <img src="../assets/images/theme_dark.png" alt="theme" id="dark"/>
+                </div>
+                <div class="theme_card">
+                    <img src="../assets/images/theme_violet.png" alt="theme" id="violet"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./popup.js" type="module"></script>
+</html>
