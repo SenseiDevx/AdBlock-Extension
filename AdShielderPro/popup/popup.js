@@ -52,22 +52,22 @@ function applyTheme(themeName) {
         case 'blue':
             BUTTON.checked = false;
             document.body.style.background = 'white';
-            document.querySelector('.header-allow').style.background = 'rgb(220 233 247)';
-            document.querySelector('.footer').style.background = 'rgb(220 233 247)';
+            document.querySelector('.header-allow').style.background = '#b0e8de';
+            document.querySelector('.footer').style.background = '#b0e8de';
             document.querySelector('.text-content').style.color = '#0f5da9';
             document.querySelector('.domain').style.color = '#0f5da9';
-
+            document.querySelector('.main_function').style.background = '#b0e8de'
             document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
             cookies.style.color = '#0f5da9';
             break;
         case 'dark':
             BUTTON.checked = true;
             document.body.style.background = '#444345';
-            document.querySelector('.header-allow').style.background = '#040404';
-            document.querySelector('.footer').style.background = '#040404';
+            document.querySelector('.header-allow').style.background = '#444345';
+            document.querySelector('.footer').style.background = '#444345';
             document.querySelector('.text-content').style.color = 'white';
             document.querySelector('.domain').style.color = '#f4f4f4';
-
+            document.querySelector('.main_function').style.background = '#515252'
             document.querySelector('.cookies_count').querySelector('p').style.color = 'white';
             cookies.style.color = 'white';
             break;
@@ -213,3 +213,13 @@ function listenForDisplayChanges() {
 }
 
 init();
+
+
+// open about page
+const openOptionsButton = document.querySelector('#openPage');
+
+openOptionsButton.addEventListener('click', openProducts);
+
+function openProducts() {
+    chrome.tabs.create({url: chrome.runtime.getURL('../page/about.html')});
+}
