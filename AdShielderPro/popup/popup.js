@@ -1,5 +1,4 @@
-import
-{
+import {
     getRulesEnabledState,
     enableRulesForCurrentPage,
     disableRulesForCurrentPage,
@@ -57,7 +56,6 @@ function applyTheme(themeName) {
             document.querySelector('.footer').style.background = 'rgb(220 233 247)';
             document.querySelector('.text-content').style.color = '#0f5da9';
             document.querySelector('.domain').style.color = '#0f5da9';
-            document.querySelector('#nameEx').style.color = '#f4f4f4';
 
             document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
             cookies.style.color = '#0f5da9';
@@ -69,7 +67,6 @@ function applyTheme(themeName) {
             document.querySelector('.footer').style.background = '#040404';
             document.querySelector('.text-content').style.color = 'white';
             document.querySelector('.domain').style.color = '#f4f4f4';
-            document.querySelector('#nameEx').style.color = '#f4f4f4';
 
             document.querySelector('.cookies_count').querySelector('p').style.color = 'white';
             cookies.style.color = 'white';
