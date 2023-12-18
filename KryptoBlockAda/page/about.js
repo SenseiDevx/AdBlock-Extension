@@ -2,12 +2,9 @@
 const div = document.querySelector('#aboutCard')
 
 //adaptive page by chanhing dispay width
-function getWidth()
-{
-    return new Promise((resolve, reject) =>
-    {
-        chrome.system.display.getInfo(function (data)
-        {
+function getWidth() {
+    return new Promise((resolve, reject) => {
+        chrome.system.display.getInfo(function (data) {
             const widthOfD = data[0]?.bounds?.width || null;
             if (widthOfD !== null) {
                 resolve(widthOfD);
@@ -18,8 +15,7 @@ function getWidth()
     });
 }
 
-function applyStyles(width)
-{
+function applyStyles(width) {
     if (width < 676) {
         div.classList.add('small-screen');
         div.classList.remove('large-screen');
@@ -31,26 +27,21 @@ function applyStyles(width)
 
 // get width
 getWidth()
-    .then((width) =>
-    {
+    .then((width) => {
         applyStyles(width);
     })
-    .catch((error) =>
-    {
+    .catch((error) => {
         console.error("Error:", error);
     });
 
 // window on resize
-window.addEventListener('resize', function ()
-{
+window.addEventListener('resize', function () {
     getWidth()
-        .then((newWidth) =>
-        {
+        .then((newWidth) => {
             console.log(newWidth);
             applyStyles(newWidth);
         })
-        .catch((error) =>
-        {
+        .catch((error) => {
             console.error("Error:", error);
         });
 });
@@ -63,23 +54,24 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n)
-{
+function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n)
-{
+function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n)
-{
+function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -90,13 +82,11 @@ function showSlides(n)
     dots[slideIndex - 1].classList.add("active");
 }
 
-prevBtn.onclick = (e) =>
-{
+prevBtn.onclick = (e) => {
     e.preventDefault();
     plusSlides(-1)
 }
-nextBtn.onclick = (e) =>
-{
+nextBtn.onclick = (e) => {
     e.preventDefault();
     plusSlides(1)
 }

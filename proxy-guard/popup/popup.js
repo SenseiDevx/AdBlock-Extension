@@ -109,6 +109,8 @@ function updateExtensionsStyle(themeName) {
     });
 }
 
+let a = 0;
+
 async function toggleAdBlocking() {
     const isEnabled = await getRulesEnabledState();
     if (isEnabled) {
@@ -116,6 +118,7 @@ async function toggleAdBlocking() {
     } else {
         await enableRulesForCurrentPage();
     }
+    a = 1;
     updateButtonState();
 }
 
@@ -124,19 +127,21 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         text.innerHTML = 'Ad blocking disabled.';
-        power.src = '../assets/icons/power-off (1).png';
-        infoIcon.src = '../assets/icons/letter-i (1).png';
+        power.innerHTML = 'OFF'
+        button.checked = false
+        infoIcon.src = '../assets/icons/letter-i.png';
         chrome.action.setIcon({
             path: {
                 16: '../assets/images/logo-off_16.png',
                 48: '../assets/images/logo-off_32.png',
                 128: '../assets/images/logo-off_64.png',
             },
-        });
-        showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
+        })
+        if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         text.innerHTML = 'Advertising on this site has been successfully blocked.';
-        power.src = '../assets/icons/power-off.png';
+        power.innerHTML = 'ON'
+        button.checked = true
         infoIcon.src = '../assets/icons/letter-i.png';
         chrome.action.setIcon({
             path: {
@@ -144,8 +149,8 @@ async function updateButtonState() {
                 48: '../assets/images/logo_32.png',
                 128: '../assets/images/logo_64.png',
             },
-        });
-        showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
+        })
+        if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
         setAlarmForNotification();
     }
 }
