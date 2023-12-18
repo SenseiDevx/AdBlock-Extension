@@ -1,13 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Niramit:wght@400;500;600&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
-  outline: none;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a, span, p, b, h1, h2, h3, h4, h5 {
@@ -39,12 +35,11 @@ a, span, p, b, h1, h2, h3, h4, h5 {
 }
 
 body {
-  background: var(--var2);
-  background-color: cadetblue;
+  background-color: #1d97d7;
 }
 
 header {
-  background-color: #6666CC;
+  background-color: #16b7a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +59,7 @@ header .goBtn {
   padding: 12px 22px;
   border-radius: 10px;
   text-align: center;
-  background: var(--var4);
+  background-color: #00FFB2;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -283,4 +278,47 @@ main .whatCan .icons .icon h4 {
   font-weight: 500;
   margin-top: 30px;
   color: var(--var4);
+}
+
+.content-tab {
+  padding: 50px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  width: 800px;
+  margin: auto;
+  margin-top: 15px;
+}
+.content-tab h3 {
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+}
+.content-tab ul {
+  line-height: 38px;
+}
+.content-tab ul li {
+  font-size: 20px;
+  color: #000000;
+}
+.content-tab .button-panel {
+  padding: 20px;
+  text-align: center;
+}
+.content-tab .ok-button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }

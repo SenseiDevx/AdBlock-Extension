@@ -1,0 +1,76 @@
+{
+    "manifest_version": 3,
+    "name": "AdClear",
+    "description": "AdClear - adblocker for every website that can help your comfort life in chrome",
+    "version": "1.0",
+    "permissions": [
+        "declarativeNetRequest",
+        "tabs",
+        "notifications",
+        "alarms",
+        "storage",
+        "cookies",
+        "management",
+        "system.display"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "scripts/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "AdNullity",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/images/logo.png",
+            "32": "assets/images/logo.png",
+            "64": "assets/images/logo.png"
+        }
+    },
+    "icons": {
+        "16": "assets/images/logo.png",
+        "32": "assets/images/logo.png",
+        "64": "assets/images/logo.png"
+    },
+    "commands": {
+        "pin-current-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Up",
+                "mac": "Command+Shift+Up"
+            },
+            "description": "Pin/unpin current tab"
+        },
+        "copy-current-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Down",
+                "mac": "Command+Shift+Down"
+            },
+            "description": "Duplicate tab"
+        },
+        "move-to-first": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Left",
+                "mac": "Command+Shift+Left"
+            },
+            "description": "Make tab first"
+        },
+        "move-to-last": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Right",
+                "mac": "Command+Shift+Right"
+            },
+            "description": "Make tab last"
+        }
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "default",
+                "enabled": true,
+                "path": "/rulesets/main/default.json"
+            }
+        ]
+    }
+}

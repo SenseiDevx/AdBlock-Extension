@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "StopAd",
-    "description": "StopAd - its time to say Stop for every ads on websites",
+    "name": "AdShieldPro",
+    "description": "AdShieldPro - its time to say Stop for every ads on websites",
     "version": "3.0",
     "permissions": [
         "declarativeNetRequest",
