@@ -1,0 +1,140 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #001019;
+    padding-bottom: 20px;
+}
+
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ee1800;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 350px;
+}
+
+.main>div {
+    width: 400px;
+}
+
+.main h3 {
+    color: #f7fafc;
+}
+
+.main h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.screen {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.left {
+    width: 360px;
+}
+
+.screen img {
+    width: 100%;
+}
+
+.content h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #f7fafc;
+}
+
+ul {
+    width: 500px;
+    margin: 10px auto 0;
+    list-style-position: inside;
+
+}
+
+li {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f7fafc;
+}
+
+.online_actions {
+    margin: 48px auto 0;
+    text-align: center;
+}
+
+
+.btn-blue {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #ee1800;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px 10px #001725;
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-blue:hover {
+    transform: scale(1.2);
+}

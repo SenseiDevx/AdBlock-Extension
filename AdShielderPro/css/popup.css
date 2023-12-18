@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
+
+:root {
+    --main-color: #0f5da9;
+    --main-hover: #05305c;
+    --main-animation: #0f5da9;
+    --link-color: #0cb754;
+    --link-active: #099344;
+    --popup-text-color: #0f5da9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anek Kannada', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    height: 100%;
+    direction: ltr !important;
+}
+
+.wrapper {
+    width: 400px;
+    height: 420px;
+}
+
+.disabled {
+    background-color: #222222;
+}
+
+.inner {
+    height: 100%;
+}
+
+.main_function {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-allow {
+    width: 100%;
+    background-color: rgb(220 233 247);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.disabled .header-allow {
+    background-color: #CBA2A2;
+}
+
+.header-text {
+    width: 40%;
+}
+
+
+.header-allow h3 {
+    width: 100%;
+    display: block;
+    color: #0f5da9;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.header-text-tittle {
+    font-size: 20px;
+    text-align: left;
+    color: #0f5da9;
+    float: left;
+    font-weight: 600;
+}
+
+.disabled .header-text-tittle {
+    color: #222222;
+}
+
+.info-link {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 5px 14px;
+    border-radius: 10px;
+    background: #f21901;
+    color: white;
+    text-align: center;
+}
+
+.info-link:hover {
+    transition: .3s ease;
+    transform: scale(1.2);
+}
+
+
+.text-content {
+    font-size: larger;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.disabled .text-content {
+    color: #222222;
+}
+
+
+.footer {
+    background-color: rgb(220 233 247);
+    padding: 10px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.settings {
+    width: 60%;
+}
+
+.cookies_count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--main-color);
+}
+
+.cookies_count p {
+    font-size: larger;
+}
+
+.cookies_count span {
+    font-size: large;
+}
+
+.domain {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.disabled .footer {
+    background-color: #CBA2A2;
+}
+
+.extensions_title {
+    font-size: 17px;
+    margin: 0;
+}
+
+.extensions_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.extension {
+    font-size: 14px;
+}
+
+/* button */
+
+
+.checkbox-wrapper-5 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 180px;
+}
+
+.input {
+    display: block;
+    margin-bottom: 1.5em;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+main {
+    padding: 0.5em 0 0 0;
+    text-align: center;
+    transform: scale(2.8);
+}
+
+.l {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.l:before,
+.l:after {
+    content: "";
+    display: block;
+}
+
+.l:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+
+}
+
+.l:after {
+    background:
+        linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+        repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% / 50% 100%,
+        radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 26% 50%;
+    width: 0.62em;
+    height: 0.35em;
+}
+
+/* Checked */
+.l:checked {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+
+.l:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%)
+}
+
+.l:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+}
+
+/* Other States */
+.l:focus {
+    /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+}
+
+/* ---------------------- */
+body .wrap {
+    width: 275px;
+    height: 100px;
+    position: relative;
+    box-shadow: 0 0 0 2px #eee, 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 500px;
+    background: #fff;
+    transform: scale(0.5);
+    cursor: pointer;
+}
+
+body .wrap * {
+    transition: 0.25s linear;
+}
+
+body .wrap .totoro {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    left: 0px;
+    top: -30px;
+    background: #bbb;
+    border-radius: 170px 170px 100px 100px/300px 300px 200px 200px;
+    z-index: 2;
+}
+
+body .wrap .totoro:before,
+body .wrap .totoro:after {
+    content: "";
+    position: absolute;
+    background: rgba(6, 61, 109, 0.75);
+    z-index: -1;
+    transform: translateZ(-10px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+body .wrap .totoro:after {
+    z-index: 2;
+    transform: translateZ(10px);
+}
+
+body .wrap .totoro .ears {
+    position: absolute;
+    width: 90%;
+    height: 40px;
+    left: 5%;
+}
+
+body .wrap .totoro .ears .ear {
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #bbb;
+    top: -10px;
+    left: 7.5px;
+    border-radius: 700px 700px 500px 500px/2750px 2750px 500px 500px;
+}
+
+body .wrap .totoro .ears .ear:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background: #bbb;
+    left: calc(50% - 2px);
+    bottom: -15px;
+}
+
+body .wrap .totoro .ears .ear:nth-of-type(2) {
+    left: auto;
+    right: 7.5px;
+}
+
+body .wrap .totoro .foot {
+    width: 40px;
+    height: 20px;
+    background: #bbb;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    border-radius: 300px 200px 200px 200px/200px 100px 100px 100px;
+    transform-origin: top right;
+    transform: rotate(0deg) scaleY(1) scaleX(1);
+}
+
+body .wrap .totoro .foot.two {
+    left: auto;
+    right: 5px;
+    transform-origin: top left;
+    border-radius: 200px 300px 200px 200px/100px 200px 100px 100px;
+}
+
+body .wrap .totoro .arm {
+    width: 25px;
+    height: 60px;
+    background: #bbb;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: 50px;
+    border-radius: 550px 100px 400px 400px/700px 200px 600px 800px;
+    transform: rotate(10deg);
+    transform-origin: top right;
+}
+
+body .wrap .totoro .arm:nth-of-type(2) {
+    left: auto;
+    right: 0px;
+    border-radius: 100px 550px 400px 400px/200px 700px 800px 600px;
+    transform: rotate(-10deg);
+    transform-origin: top left;
+}
+
+body .wrap .totoro .body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 170px 170px 100px 100px/300px 300px 200px 200px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+body .wrap .totoro .body .spots {
+    position: absolute;
+    width: 90%;
+    height: 57.5%;
+    background: #ffffff;
+    bottom: 10px;
+    left: 5%;
+    border-radius: 300px 300px 300px 300px/300px 300px 500px 500px;
+}
+
+body .wrap .totoro .body .spots:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 300px 300px 300px 300px/300px 300px 500px 500px;
+}
+
+body .wrap .totoro .body .spots .spot {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 0 #888888;
+    left: calc(50% - 6.5px);
+    top: 10px;
+    transform: translateZ(20px) scaleX(0.75) scale(0.75);
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(2),
+body .wrap .totoro .body .spots .spot:nth-of-type(3) {
+    top: 15px;
+    left: calc(50% - 25px);
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(3) {
+    left: calc(50% + 10px);
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(n + 4) {
+    top: 30px;
+    left: 10px;
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(5) {
+    left: 30px;
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(6) {
+    left: 50px;
+}
+
+body .wrap .totoro .body .spots .spot:nth-of-type(7) {
+    left: 70px;
+}
+
+body .wrap .totoro .body .spots .spot:before,
+body .wrap .totoro .body .spots .spot:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background: #888888;
+    border-radius: 200%;
+    left: -2.5px;
+    transform: rotate(45deg);
+    bottom: 10px;
+}
+
+body .wrap .totoro .body .spots .spot:after {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+body .wrap .totoro .body .inner {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 15px;
+}
+
+body .wrap .totoro .body .inner:before {
+    content: "";
+    position: absolute;
+    width: 17.5px;
+    height: 6px;
+    background: #222;
+    left: calc(50% - 8.75px);
+    top: 10px;
+    border-radius: 200px 200px 100px 100px/100px 100px 50px 50px;
+}
+
+body .wrap .totoro .body .inner .mouth {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: repeating-linear-gradient(to right, #fff, #fff 10px, #222 10px, #222 11px, #fff 11px);
+    bottom: 0px;
+    left: calc(50% - 25px);
+    border-radius: 25px 25px 300px 300px/25px 25px 200px 200px;
+    box-shadow: inset 0 0 0 1px #a2a2a2;
+}
+
+body .wrap .totoro .body .inner .eye {
+    position: absolute;
+    top: 5px;
+    width: 12.5px;
+    height: 12.5px;
+    background: #222;
+    left: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #a2a2a2, inset 0 0 0 4.5px #fff;
+}
+
+body .wrap .totoro .body .inner .eye:nth-of-type(2) {
+    left: auto;
+    right: 20px;
+}
+
+body .wrap input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    opacity: 0;
+}
+
+body .wrap input:checked~.totoro {
+    transform: translateX(180px) translateY(-5px);
+    transition: 0.5s linear;
+}
+
+body .wrap input:checked~.totoro:before {
+    opacity: 1;
+}
+
+body .wrap input:checked~.totoro:after {
+    opacity: 0.25;
+}
+
+body .wrap input:checked~.totoro * {
+    transition: 0.5s linear;
+}
+
+body .wrap input:checked~.totoro .foot {
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.45s, 0.45s;
+    transform: rotate(-75deg) scaleY(1.5) scaleX(1.5) translateY(-10px) translateX(10px);
+}
+
+body .wrap input:checked~.totoro .foot.two {
+    transform: rotate(75deg) scaleY(1.5) scaleX(1.5) translateY(-10px) translateX(-10px);
+}
+
+body .wrap input:checked~.totoro .arm {
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.45s, 0.45s;
+    transform: rotate(40deg) translateX(7.5px);
+}
+
+body .wrap input:checked~.totoro .arm:nth-of-type(2) {
+    transform: rotate(-40deg) translateX(-7.5px);
+}
+
+body .wrap input:checked~.totoro .ears .ear {
+    left: 70px;
+    animation: ear1 1s ease-in-out infinite alternate;
+    transform-origin: -20% 120%;
+}
+
+@keyframes ear1 {
+    to {
+        transform: rotate(5deg) translateY(-2.5px);
+    }
+}
+
+body .wrap input:checked~.totoro .ears .ear:nth-of-type(2) {
+    left: auto;
+    right: 70px;
+    animation: ear2 1s ease-in-out infinite alternate;
+    transform-origin: 120% 120%;
+}
+
+@keyframes ear2 {
+    to {
+        transform: rotate(-5deg) translateY(-2.5px);
+    }
+}
+
+body .wrap input:checked~.totoro .body .mouth {
+    box-shadow: inset 0 0 0 2px #626262;
+    height: 2px;
+    bottom: 2.5px;
+    width: 20px;
+    left: calc(50% - 10px);
+}
+
+body .wrap input:checked~.totoro .body .spots:before {
+    animation: breathe2 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes breathe2 {
+    to {
+        transform: scale(1.025);
+    }
+}
+
+body .wrap input:checked~.totoro .body .inner:before {
+    animation: shake 3s ease-in-out infinite;
+}
+
+@keyframes shake {
+    90% {
+        transform: translateX(0px);
+    }
+
+    91% {
+        transform: translateX(1px);
+    }
+
+    92% {
+        transform: translateX(0px);
+    }
+
+    93% {
+        transform: translateX(-1px);
+    }
+
+    94% {
+        transform: translateX(0px);
+    }
+}
+
+body .wrap input:checked~.totoro .body .inner,
+body .wrap input:checked~.totoro .body .spots {
+    animation: roll1 0.5s linear 1 forwards;
+}
+
+body .wrap input:checked~.totoro .body .inner .spot,
+body .wrap input:checked~.totoro .body .spots .spot {
+    animation: breathe 1s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+    to {
+        transform: translateZ(20px) scaleX(0.8) scale(0.75) translateY(-5px) rotateX(-20deg);
+    }
+}
+
+body .wrap input:checked~.totoro .body .inner .eye,
+body .wrap input:checked~.totoro .body .spots .eye {
+    box-shadow: inset 0 0 0 1px #626262, inset 0 0 0 4.5px #fff;
+    height: 2px;
+    width: 7.5px;
+    transform: translateX(7.5px);
+}
+
+body .wrap input:checked~.totoro .body .inner .eye:nth-of-type(2),
+body .wrap input:checked~.totoro .body .spots .eye:nth-of-type(2) {
+    transform: translateX(-7.5px);
+}
+
+@keyframes roll1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(100%) rotateY(150deg);
+    }
+
+    50.001% {
+        transform: translateX(-100%) rotateY(-150deg);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
