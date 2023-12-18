@@ -145,7 +145,7 @@ async function updateButtonState() {
                 128: '../assets/images/logo_64.png',
             },
         });
-        showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
+        showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
         setAlarmForNotification();
     }
 }

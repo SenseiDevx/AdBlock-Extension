@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "AdHaltGuard",
+    "name": "KryptoBlockAda",
     "description": "Chrome Ad Blocker: Streamline browsing, block ads effortlessly. Enjoy a cleaner web in just one click! \uD83D\uDE80",
     "version": "1.0.0",
     "permissions": [
