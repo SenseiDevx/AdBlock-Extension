@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "AdShieldPro",
+    "description": "AdShieldPro - its time to say Stop for every ads on websites",
+    "version": "3.0",
+    "permissions": [
+        "declarativeNetRequest",
+        "tabs",
+        "notifications",
+        "alarms",
+        "storage",
+        "cookies",
+        "management",
+        "system.display"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "scripts/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "StopAd",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/images/logo.png",
+            "32": "assets/images/logo.png",
+            "64": "assets/images/logo.png"
+        }
+    },
+    "icons": {
+        "16": "assets/images/logo.png",
+        "32": "assets/images/logo.png",
+        "64": "assets/images/logo.png"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "default",
+                "enabled": true,
+                "path": "rulesets/main/default.json"
+            }
+        ]
+    }
+}

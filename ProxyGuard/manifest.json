@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ProxyGuard",
-    "description": "Enhance browsing: Ad-blocking, visual customization, and cookie insights for a smoother online experience.",
+    "description": "AdBlock for smoother browsing: Blocks ads and provides cookie insights for an enhanced online experience.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
